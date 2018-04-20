@@ -1,0 +1,18 @@
+﻿1909;Sebastião Fernandes de Oliveira;1909 - 1915
+1915;Silvino Bezerra Neto;1915 - 1918
+1927;Alcides Feijó Raupp ;1927 - 1930
+1930;Floriano Cavalcante de Albuquerque;1930 - 1930
+1935;Antonio Carlos de Mello Barreto;1935 - 1939
+1939;Jeremias Pinheiro da Câmara Filho;1939 - 1954
+1955;Clodoaldo de Carvalho;1955 - 1956
+1956;Pedro Pinheiro de Souza;1956 - 1962
+1962;Irineu Martins de Lima;1962 - 1964
+1964;Pedro Martins de Lima;1964 - 1968
+1968;João Faustino Ferreira Neto;1968 - 1971
+1971;Luciano Rocha Coelho;1971 - 1974
+1974;Arnaldo Arsênio de Azevedo;1974 - 1979
+1979;Marcondes Mundim Guimarães;1979 - 1985
+1987;Luzia Vieira de França;1987 - 1991
+1991;Francisco das Chagas de Mariz Fernandes;1991 - 2000
+2000;Getúlio Marques Ferreira;2000 - 2003
+2003;Sérgio Luis Alves de França;2003 - 2004
