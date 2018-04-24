@@ -60,7 +60,7 @@ namespace PortalMemoria
                     // Configura Item do Menu
                     mi.ToolTip = linha[0];
                     mi.Text = linha[0];
-                    mi.NavigateUrl = "~\\WebFormAtosEFatosDestaque.aspx?fato="+linha[0];
+                    mi.NavigateUrl = "~\\WebFormAtosEFatosDestaque.aspx?fato="+linha[0]+"&destaque="+linha[1];
                     MenuAtoseFatos.Items.Add(mi);
                 } // fim do foreach
             }

@@ -69,6 +69,7 @@
     <Content Include="App_Themes\Padrão\StyleSheet1.css" />
     <Content Include="ExDiretores\ExDiretores.txt" />
     <Content Include="WebFormAtosEFatos.aspx" />
+    <Content Include="WebFormAtosEFatosDestaque.aspx" />
     <Content Include="WebFormExDiretores.aspx" />
     <Content Include="WebFormExDiretoresDestaque.aspx" />
     <Content Include="WebFormInicial.aspx" />
@@ -102,6 +103,13 @@
     </Compile>
     <Compile Include="WebFormAtosEFatos.aspx.designer.cs">
       <DependentUpon>WebFormAtosEFatos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebFormAtosEFatosDestaque.aspx.cs">
+      <DependentUpon>WebFormAtosEFatosDestaque.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFormAtosEFatosDestaque.aspx.designer.cs">
+      <DependentUpon>WebFormAtosEFatosDestaque.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebFormExDiretores.aspx.cs">
       <DependentUpon>WebFormExDiretores.aspx</DependentUpon>

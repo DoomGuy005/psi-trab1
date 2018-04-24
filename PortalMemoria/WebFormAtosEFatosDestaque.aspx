@@ -2,9 +2,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div>
-        <label></label>
-        <p></p>
-        <img />
-    </div>
+    <asp:Label ID="LabelFato" runat="server" Text="Label" Font-Bold="True" Font-Names="Verdana"></asp:Label>
+    <hr />
+    <asp:Label ID="LabelDestaqueFato" runat="server" Text="Label" Font-Names="Verdana" Font-Size="Small"></asp:Label>
+    <br />
+    <asp:Image ID="ImageDestaqueFato" runat="server" />
 </asp:Content>
