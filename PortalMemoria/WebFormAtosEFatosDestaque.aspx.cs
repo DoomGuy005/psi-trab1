@@ -57,7 +57,7 @@ namespace PortalMemoria
                 strAtosEFatos = strAtosEFatos + "<br />" + strlinha;
             }
             LabelDestaqueFato.Text = strAtosEFatos;
-            ImageDestaqueFato.ImageUrl = Request.QueryString["destaque"] + "Destaque.jpg";
+            ImageDestaqueFato.ImageUrl ="\\AtosEFatos\\" + Request.QueryString["destaque"] + "Destaque.jpg";
         }
     }
 }
