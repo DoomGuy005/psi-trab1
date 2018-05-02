@@ -34,7 +34,7 @@
                             <DynamicSelectedStyle BackColor="#FFCC66" />
                             <Items>
                                 <asp:MenuItem Text="Página Inicial" Value="Página Inicial" NavigateUrl="~/WebFormInicial.aspx"></asp:MenuItem>
-                                <asp:MenuItem Text="Cronologia" Value="Cronologia"></asp:MenuItem>
+                                <asp:MenuItem Text="Cronologia" Value="Cronologia" NavigateUrl="~/WebFormCronologia.aspx"></asp:MenuItem>
                                 <asp:MenuItem Text="Atos e Fatos" Value="Atos e Fatos" NavigateUrl="~/WebFormAtosEFatos.aspx"></asp:MenuItem>
                                 <asp:MenuItem Text="Depoimentos" Value="Depoimentos"></asp:MenuItem>
                                 <asp:MenuItem Text="Mensagens" Value="Mensagens"></asp:MenuItem>

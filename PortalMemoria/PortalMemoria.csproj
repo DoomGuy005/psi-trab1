@@ -67,15 +67,56 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Themes\Padrão\StyleSheet1.css" />
+    <Content Include="Cronologia\1909.jpg" />
+    <Content Include="Cronologia\1909.txt" />
+    <Content Include="Cronologia\1910.jpg" />
+    <Content Include="Cronologia\1910.txt" />
+    <Content Include="Cronologia\1914.jpg" />
+    <Content Include="Cronologia\1914.txt" />
+    <Content Include="Cronologia\1937.jpg" />
+    <Content Include="Cronologia\1937.txt" />
+    <Content Include="Cronologia\1939.jpg" />
+    <Content Include="Cronologia\1939.txt" />
+    <Content Include="Cronologia\1942.jpg" />
+    <Content Include="Cronologia\1942.txt" />
+    <Content Include="Cronologia\1947.jpg" />
+    <Content Include="Cronologia\1947.txt" />
+    <Content Include="Cronologia\1959.jpg" />
+    <Content Include="Cronologia\1959.txt" />
+    <Content Include="Cronologia\1961.jpg" />
+    <Content Include="Cronologia\1961.txt" />
+    <Content Include="Cronologia\1963.jpg" />
+    <Content Include="Cronologia\1963.txt" />
+    <Content Include="Cronologia\1968.jpg" />
+    <Content Include="Cronologia\1968.txt" />
+    <Content Include="Cronologia\1970.jpg" />
+    <Content Include="Cronologia\1970.txt" />
+    <Content Include="Cronologia\1975.jpg" />
+    <Content Include="Cronologia\1975.txt" />
+    <Content Include="Cronologia\1979.jpg" />
+    <Content Include="Cronologia\1979.txt" />
+    <Content Include="Cronologia\1992.jpg" />
+    <Content Include="Cronologia\1992.txt" />
+    <Content Include="Cronologia\1994.jpg" />
+    <Content Include="Cronologia\1994.txt" />
+    <Content Include="Cronologia\1999.jpg" />
+    <Content Include="Cronologia\1999.txt" />
+    <Content Include="Cronologia\2006.jpg" />
+    <Content Include="Cronologia\2006.txt" />
+    <Content Include="Cronologia\2008.jpg" />
+    <Content Include="Cronologia\2008.txt" />
+    <Content Include="Cronologia\Cronologia.txt" />
     <Content Include="ExDiretores\ExDiretores.txt" />
     <Content Include="WebFormAtosEFatos.aspx" />
     <Content Include="WebFormAtosEFatosDestaque.aspx" />
+    <Content Include="WebFormCronologia.aspx" />
     <Content Include="WebFormExDiretores.aspx" />
     <Content Include="WebFormExDiretoresDestaque.aspx" />
     <Content Include="WebFormInicial.aspx" />
     <Content Include="AtosEFatos\MenuAtosEFatos.csv" />
     <None Include="packages.config" />
     <Content Include="SiteMaster.Master" />
+    <Content Include="PortalMemoria.ppt" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -111,6 +152,13 @@
     <Compile Include="WebFormAtosEFatosDestaque.aspx.designer.cs">
       <DependentUpon>WebFormAtosEFatosDestaque.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WebFormCronologia.aspx.cs">
+      <DependentUpon>WebFormCronologia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFormCronologia.aspx.designer.cs">
+      <DependentUpon>WebFormCronologia.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebFormExDiretores.aspx.cs">
       <DependentUpon>WebFormExDiretores.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -133,6 +181,7 @@
       <DependentUpon>WebFormInicial.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
