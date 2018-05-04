@@ -105,7 +105,7 @@
     <Content Include="Cronologia\2006.txt" />
     <Content Include="Cronologia\2008.jpg" />
     <Content Include="Cronologia\2008.txt" />
-    <Content Include="Cronologia\Cronologia.txt" />
+    <None Include="Cronologia\Cronologia.csv" />
     <Content Include="ExDiretores\ExDiretores.txt" />
     <Content Include="WebFormAtosEFatos.aspx" />
     <Content Include="WebFormAtosEFatosDestaque.aspx" />
