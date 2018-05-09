@@ -50,7 +50,7 @@ namespace PortalMemoria
         {
             string strAtosEFatos = "";
 
-            LabelFato.Text = Request.QueryString["fato"];
+            LabelEvento.Text = Request.QueryString["fato"];
             LeArquivoTexto();
             foreach (string strlinha in AtosEFatos)
             {

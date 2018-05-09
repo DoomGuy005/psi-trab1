@@ -40,6 +40,15 @@ namespace PortalMemoria {
         protected global::System.Web.UI.WebControls.Image ImageEvento;
         
         /// <summary>
+        /// Controle LabelAno.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelAno;
+        
+        /// <summary>
         /// Controle LabelEvento.
         /// </summary>
         /// <remarks>

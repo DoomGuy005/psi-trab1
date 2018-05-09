@@ -33,3 +33,12 @@ C:\Users\TEMP\Desktop\psi-trab1\PortalMemoria\obj\Debug\PortalMemoria.csprojReso
 C:\Users\TEMP\Desktop\psi-trab1\PortalMemoria\obj\Debug\PortalMemoria.csproj.CoreCompileInputs.cache
 C:\Users\TEMP\Desktop\psi-trab1\PortalMemoria\obj\Debug\PortalMemoria.dll
 C:\Users\TEMP\Desktop\psi-trab1\PortalMemoria\obj\Debug\PortalMemoria.pdb
+C:\Users\TEMP.IFRN\Desktop\psi-trab1\PortalMemoria\bin\PortalMemoria.dll.config
+C:\Users\TEMP.IFRN\Desktop\psi-trab1\PortalMemoria\bin\PortalMemoria.dll
+C:\Users\TEMP.IFRN\Desktop\psi-trab1\PortalMemoria\bin\PortalMemoria.pdb
+C:\Users\TEMP.IFRN\Desktop\psi-trab1\PortalMemoria\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\TEMP.IFRN\Desktop\psi-trab1\PortalMemoria\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\TEMP.IFRN\Desktop\psi-trab1\PortalMemoria\obj\Debug\PortalMemoria.csprojResolveAssemblyReference.cache
+C:\Users\TEMP.IFRN\Desktop\psi-trab1\PortalMemoria\obj\Debug\PortalMemoria.csproj.CoreCompileInputs.cache
+C:\Users\TEMP.IFRN\Desktop\psi-trab1\PortalMemoria\obj\Debug\PortalMemoria.dll
+C:\Users\TEMP.IFRN\Desktop\psi-trab1\PortalMemoria\obj\Debug\PortalMemoria.pdb

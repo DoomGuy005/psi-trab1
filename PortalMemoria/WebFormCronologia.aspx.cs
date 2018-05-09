@@ -56,40 +56,56 @@ namespace PortalMemoria
             // Le arquivo com nome de imagens
             if (Cronologia.Count > 0)
             {
-                indicecoluna = 0; qtdcoluna = 4;
+                indicecoluna = 0; qtdcoluna = 19;
                 tr = new TableRow(); // Cria nova linha do componente table
                 foreach (string strlinha in Cronologia)
                 {
                     // Separa os dados em cada linha
                     linha = strlinha.Split(';');
+                    // Cada celula da tabela tem 2 elementos: imagem do evento, periodo do evento
                     // Configuração de uma celula da tabela
-                    // Cada celula da tabela tem 3 elementos: imagem do diretor, 
-                    //    nome do diretor e periodo de direção
                     tc = new TableCell();
-                    // Configura Imagem do Diretor
+                    // Configura Nome do evento
+                    rotulo = new Label();
+                    rotulo.Text = linha[0] + "<br />"; // contem o ano do evento
+                    tc.Controls.Add(rotulo); // Adiciona rotulo na celula
+                    // Configura Imagem do evento
                     imagem = new ImageButton();
                     imagem.ImageUrl = "~\\Cronologia\\" + linha[0] + ".jpg";
-                    // linha[0] contem o ano inicial do diretor
+                    imagem.Width = 200;
+                    imagem.Height = 100;
+                    // linha[0] contem o ano do evento
                     imagem.ToolTip = linha[1];
                     imagem.PostBackUrl = "~\\WebFormCronologia.aspx?ano=" + linha[0] + "&evento=" + linha[1];
-                    tc.Controls.Add(imagem); // Adiciona imagem na celula
                     tc.Height = 100;
-                    tc.Width = 400;
+                    tc.Width = 200;
                     tc.HorizontalAlign = HorizontalAlign.Center;
-                    // Configura Nome do diretor
-                    rotulo = new Label();
-                    rotulo.Text = "<br />" + linha[0]; // contem o ano do evento
-                    tc.Controls.Add(rotulo); // Adiciona rotulo na celula
+                    tc.Controls.Add(imagem); // Adiciona imagem na celula
+                    
                     // Configura Periodo de direção
                     // Adiciona celula na linha
                     tr.Cells.Add(tc);
                     // Contador de colunas
                     indicecoluna++;
-                    // Adiciona linha configurada na tabela
-                    TableCronologia.Rows.Add(tr);
                 }
-
+                // Adiciona linha configurada na tabela
+                TableCronologia.Rows.Add(tr);
             }
+
+        }
+        void InitFato()
+        {
+            string strCronologia = "";
+
+            LabelAno.Text = Request.QueryString["ano"];
+            LeArquivoTexto();
+            foreach (string strlinha in Cronologia)
+            {
+                strCronologia = strCronologia + "<br />" + strlinha;
+            }
+            LabelEvento.Text = Request.QueryString["evento"];
+            LabelDesc.Text = strCronologia;
+            ImageEvento.ImageUrl = "\\Cronologia\\" + Request.QueryString["ano"] + ".jpg";
         }
     }
 }
