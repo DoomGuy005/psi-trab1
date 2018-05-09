@@ -15,6 +15,7 @@ namespace PortalMemoria
         {
             LeArquivoTexto();
             InitTable();
+            InitCronologia();
         }
         void LeArquivoTexto()
         {
@@ -25,6 +26,34 @@ namespace PortalMemoria
             Cronologia = new List<String>();
             // Nome do Arquivo Texto
             Arquivo = Request.PhysicalApplicationPath + "Cronologia\\Cronologia.csv";
+
+            // Le arquivo com nome de imagens
+            if (System.IO.File.Exists(Arquivo))
+            {
+                sr = new StreamReader(System.IO.File.OpenRead(Arquivo));
+                try
+                {
+                    while (sr.Peek() > -1)
+                    {
+                        Linha = sr.ReadLine(); // Le uma Linha
+                        Cronologia.Add(Linha);
+                    }
+                }
+                finally
+                {
+                    sr.Close();
+                }
+            }
+        }
+        void LeArquivoDesc()
+        {
+            StreamReader sr;
+            string Arquivo, Linha;
+
+            // Cria Lista de Diretores
+            Cronologia = new List<String>();
+            // Nome do Arquivo Texto
+            Arquivo = Request.PhysicalApplicationPath + "Cronologia\\" + Request.QueryString["ano"] + ".txt";
 
             // Le arquivo com nome de imagens
             if (System.IO.File.Exists(Arquivo))
@@ -56,7 +85,8 @@ namespace PortalMemoria
             // Le arquivo com nome de imagens
             if (Cronologia.Count > 0)
             {
-                indicecoluna = 0; qtdcoluna = 19;
+                indicecoluna = 0;
+                qtdcoluna = Cronologia.Count;
                 tr = new TableRow(); // Cria nova linha do componente table
                 foreach (string strlinha in Cronologia)
                 {
@@ -67,13 +97,14 @@ namespace PortalMemoria
                     tc = new TableCell();
                     // Configura Nome do evento
                     rotulo = new Label();
+                    rotulo.Font.Name = LabelAno.Font.Name;
                     rotulo.Text = linha[0] + "<br />"; // contem o ano do evento
                     tc.Controls.Add(rotulo); // Adiciona rotulo na celula
                     // Configura Imagem do evento
                     imagem = new ImageButton();
                     imagem.ImageUrl = "~\\Cronologia\\" + linha[0] + ".jpg";
-                    imagem.Width = 200;
-                    imagem.Height = 100;
+                    imagem.Width = 210;
+                    imagem.Height = 110;
                     // linha[0] contem o ano do evento
                     imagem.ToolTip = linha[1];
                     imagem.PostBackUrl = "~\\WebFormCronologia.aspx?ano=" + linha[0] + "&evento=" + linha[1];
@@ -93,19 +124,19 @@ namespace PortalMemoria
             }
 
         }
-        void InitFato()
+        void InitCronologia()
         {
             string strCronologia = "";
 
             LabelAno.Text = Request.QueryString["ano"];
-            LeArquivoTexto();
+            LeArquivoDesc();
             foreach (string strlinha in Cronologia)
             {
                 strCronologia = strCronologia + "<br />" + strlinha;
             }
             LabelEvento.Text = Request.QueryString["evento"];
             LabelDesc.Text = strCronologia;
-            ImageEvento.ImageUrl = "\\Cronologia\\" + Request.QueryString["ano"] + ".jpg";
+            ImageEvento.ImageUrl = "\\Cronologia\\" + Request.QueryString["ano"] +".jpg";
         }
     }
 }
